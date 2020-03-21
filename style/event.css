@@ -308,14 +308,21 @@
     position: relative;
     margin: 0 5px;
 }
-.content_furniture_center_img_img i{
+/* .content_furniture_center_img_img i{
     position: absolute;
     right: 0;
     border-radius: 50%;
     top: 0;
     font-size: 20px;
-    background-color: var(--lightred-color);
-    color: var(--white-color);
+    background-color: var(--white-color);
+    color: var(--lightred-color);
+} */
+.content_furniture_center_img_img_i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--lightred-color);
+    border-radius: 50%;
 }
 .content_furniture_center_img img{
     border-radius: 9%;
