@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/event.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="container-fluid event_header">
+        <div class="container event_header_top">
+            <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+            <label for="nav-mobile-input" class="overlay"></label>
+            <div class="event_header_top_menu">
+                <label for="nav-mobile-input" class="nav__mobile_close">
+                    <i class="fas fa-window-close"></i>
+                </label>
+                <h2 class="event_header_logo">Wp Booking Pro</h2>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Catelogy</a>
+                    </li>
+                </ul>
+                <h1>Wp Booking Pro</h1>
+                <ul>
+                    <li>
+                        <a href="">Employee</a>
+                    </li>
+                    <li>
+                        <a href="">Event</a>
+                    </li>
+                    <li>
+                        <a href="">My profile</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="event_header_bars">
+                <label for="nav-mobile-input" class="event_header_top_bars">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </div>
+        <div class="container event_header_btn_cart">
+            <div class="event_header_cart">
+                <i class="fas fa-cart-plus"></i>
+            </div>
+        </div>
+        <!-- <div class="container event_header_bot">
+            <h1 class="text-center">events</h1>
+            <div class="event_header_bot_menu text-center">
+                <ul>                   
+                    <li>
+                        <a href="">Training</a>
+                    </li>
+                    <li>
+                        <a href="">Location</a>
+                    </li>
+                    <li>
+                        <a href="">Trainer</a>
+                    </li>
+                    <li>
+                        <a href="">Search Training</a>
+                    </li>
+                </ul>
+            </div> 
+        </div> -->
+    </header>
+    <!-- end header -->
+
+    <!-- start content -->
+    <div class="event_content container-fluid">
+        <div class="container-fluid" style="padding: 0;">
+            <div class="event_title text-center">
+                <h1>events</h1>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding: 0;">
+            <div class="event_content_button container">
+                <button class="tablink" onclick="openPage('training', this, '#FF6720')">Training</button>
+                <button class="tablink" onclick="openPage('Location', this, '#FF6720')">Location</button>
+                <button class="tablink" onclick="openPage('Trainer', this, '#FF6720')">Trainer</button>
+                <button class="tablink" onclick="openPage('searchtraining', this, '#FF6720')" id="defaultOpen">
+                    Search
+                    <span class="training_furniture">Training</span>
+                </button>
+            </div>
+            <div id="training" class="tabcontent">
+                <div class="test container">
+                    <h3>Home</h3>
+                    <p>hihi</p>
+                </div>
+            </div>
+
+            <div id="Location" class="tabcontent">
+                <div class="test container">
+                    <h3>Home</h3>
+                    <p>hehe</p>
+                </div>
+            </div>
+
+            <div id="Trainer" class="tabcontent">
+                <div class="test container">
+                    <h3>Home</h3>
+                    <p>haha</p>
+                </div>
+            </div>
+
+            <div id="searchtraining" class="tabcontent">
+                <div class="test container">
+                    <div class="event_content_content">
+                        <div class="event_content_icon" onclick="myFunction()">
+                            <i id="daucong" class="fas fa-plus"></i>
+                            <i id="dautru" class="fas fa-minus" style="display: none;"></i>
+                        </div>
+                        <div class="event_content_price">
+                        <p>$80</p>
+                        </div>
+                        <div class="content_appears">
+                        <h2>yoga div - lunging, foot & knee alignment and breathing</h2>
+                        <div class="content_appears_capacity_location">
+                            <div class="content_appears_capacity_location_top">
+                            <div class="content_appears_capacity">
+                                <p>
+                                    capacity:
+                                    <span>5/20</span>
+                                </p>
+                            </div>
+                            <div class="content_appears_location">
+                                <p>
+                                    location:
+                                    <span>415 Temple Lane Antioch, CA 94509</span>
+                                </p>
+                            </div>
+                            </div>
+                            <div class="content_appears_capacity_location_bot">
+                                <span>march 02,2020 - March 20,2020 6:00 am - 7:30 am,
+                                        March 11,2020 - March 26,2020 5:00 am - 6:30 am
+                                </span>
+                            </div>                           
+                        </div>
+                        </div>
+                        <div id="nhanvaoday" class="noidung" style="display: none;">
+                            <div class="content_furniture">
+                                <div class="content_furniture_top">
+                                <h2>ABOUT THIS EVENTS</h2>
+                                    <span>
+                                        this class helps to blance the mind and the mind, Suitable for people praticing at any level. It is especially good for beginers because of its lightness and purity.
+                                    </span>
+                                </div>
+                                <div class="content_furniture_center">
+                                    <h2>trainers</h2>
+                                    <div class="content_furniture_center_img">
+                                        <div onclick="funtionclick()" class="content_furniture_img_funtion">
+                                        <div class="content_furniture_center_img_img">
+                                        <img src="img/trainer1.jpg" alt="">
+                                        <i id="an" class="fab fa-vimeo-v"></i>
+                                        </div>
+                                        <div class="content_furniture_center_img_img">
+                                        <img src="img/trainer2.png" alt="">
+                                        <i id="hien" style="display: none;" class="fab fa-vimeo-v"></i>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form action="" class="content_furniture_bot">
+                                    <h2>Book Appointment</h2>
+                                    <div class="numberofperson">
+                                        <p>number Of Person:</p>
+                                        <div class="numberofperson_button">
+                                        <button type="button" id="minus" class="button_plus">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                    			        <input id="input_value" class="input_amout" checked="none" value="01" max="15" min="1">
+                    			        <button type="button" id="plus" class="button_minus">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                     </div>
+                                    <div class="selecttime">
+                                        <label for="cars">Select Of Times</label>
+                                                <select id="cars">
+                                                        <option value="volvo">6:30 - 7:30 AM</option>
+                                                        <option value="saab">7:30 - 8:30 AM</option>                                                       
+                                                </select>
+                                    </div>
+                                    <div class="content_furniture_bot_button">                                   
+                                        <a href="#"><button type="button">Book Now</button></a>                                      
+                                        <button class="event_btn_cart" type="submit">Add to Cart</button>                                      
+                                    </div>
+                                </form>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+
+    <script src="js/jstabhtml.js"></script>
+    <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
