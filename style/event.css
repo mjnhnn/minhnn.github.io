@@ -463,6 +463,61 @@
   }
   /* css đóng mở tab */
 /* css tab html content */
+/* css footer */
+.event_footer {
+    height: auto;
+    background-color: black;
+                    }
+    .event_footer_col_12{
+        margin: 0;
+        padding: 20px 0;
+    }
+    .event_footer_col_12_left{
+        background-color: black;
+        padding: 0;
+    }
+    .event_footer_col_12_left{
+        color: white;
+    }
+    .event_footer_icon{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .event_footer_icon i{
+        margin: 0 7px;
+    }
+    .event_footer_icon i:hover{
+        color: blueviolet;
+    }
+    .event_footer_col_12_right_menu{
+        margin:0 70px 0 0;
+    }
+    .event_footer_col_12_right_menu h2{
+        color: white;
+    }
+    .event_footer_col_12_right_menu ul{
+        padding: 0;
+    }
+    .event_footer_col_12_right_menu ul li{
+        list-style: none;
+        padding: 5px 0;
+    }
+    .event_footer_col_12_right_menu ul li a{
+        text-decoration: none;
+        color: #C0C0C0;
+    }
+    .event_footer_col_12_right_menu ul li a:hover{
+        color: red;
+    }
+    .event_footer_col_12_right_menu_suites{
+        display: flex;
+    }
+    .event_footer_col_12_right_menu_suites ul{
+        padding: 0 35px 0 0;
+        margin: 0;
+    }
+    
+/* css footer */
 
 
 
